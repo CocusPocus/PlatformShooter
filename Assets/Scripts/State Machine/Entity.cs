@@ -25,6 +25,8 @@ public class Entity : MonoBehaviour
     
     //The speed the last attack have
     public int speedFromAttack { get; private set; }
+
+    public Vector2 movement { get; private set; }
     #endregion
 
     #region Unity Functions
