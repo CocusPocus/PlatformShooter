@@ -14,6 +14,13 @@ public class MovementState : State
     }
 
 
+
+public virtual void start ()
+{
+    aliveGO = Transform.Find("Alive"). gameObject;
+    rb = aliveGO.GetComponent<Rigidbody2D> ();
+    anim = aliveGO.GetComponent <Animator> ();
+}
  public override void Enter()
     {
         base.Enter();
